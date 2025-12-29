@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arth Kumar Das | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #020617, #0f172a, #020617);
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: linear-gradient(90deg, #020617, #020617);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background: #38bdf8;
+      transition: .3s;
+    }
+
+    nav a:hover::after { width: 100%; }
+    nav a:hover { color: #38bdf8; }
+
+    section { padding: 90px 60px; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero h2 {
+      font-size: 44px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 18px;
+      max-width: 600px;
+    }
+
+    .profile-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-wrapper img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #38bdf8;
+      box-shadow: 0 0 40px rgba(56, 189, 248, 0.6);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, #020617);
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,.45);
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px rgba(56,189,248,.25);
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: rgba(56,189,248,0.08);
+      padding: 12px 18px;
+      border-radius: 30px;
+      margin: 10px;
+      border: 1px solid #38bdf8;
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      background: linear-gradient(90deg, #020617, #020617);
+      margin-top: 60px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 900px) {
+      header { padding: 20px 30px; }
+      section { padding: 70px 30px; }
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero p { margin-left: auto; margin-right: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Arth Kumar Das</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#syllabus">Academics</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <div>
+    <h2>Arth Kumar Das</h2>
+    <p>
+      I am a B.Tech Computer Science & Engineering student with a strong interest in Artificial Intelligence and Machine Learning, which I am currently pursuing. I have hands-on knowledge of Python, SQL, and database connectivity using Python–SQL connectors, along with a growing interest in data-driven technologies.
+    </p>
+  </div>
+  <div class="profile-wrapper">
+    <img src="D:\Arth-Portfolio\images\profile.jpg" alt="Profile Image" />
+  </div>
+</section>
+
+<section id="syllabus">
+  <h2>Academic Focus</h2>
+  <div class="card-grid">
+    <div class="card"><h3>Programming Fundamentals</h3><p>C Programming, Python Programming</p></div>
+    <div class="card"><h3>Mathematics for Computing</h3><p>Linear Algebra, Probability & Statistics, Discrete Mathematics</p></div>
+    <div class="card"><h3>Core Computer Science</h3><p>Data Structures, Operating Systems, DBMS, Computer Networks</p></div>
+    <div class="card"><h3>Artificial Intelligence & ML</h3><p>Artificial Intelligence, Machine Learning (Currently Pursuing)</p></div>
+    <div class="card"><h3>Data & Databases</h3><p>SQL, Database Design, Python–SQL Connectivity</p></div>
+    <div class="card"><h3>Professional Development</h3><p>Ethics, Communication Skills, Innovation & Entrepreneurship</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card-grid">
+    <div class="card"><h3>Student Portfolio Website</h3><p>Responsive portfolio website built using HTML and CSS with modern UI design.</p></div>
+    <div class="card"><h3>Python–SQL Data Manager</h3><p>Application to connect Python with SQL database for storing and retrieving records.</p></div>
+    <div class="card"><h3>Academic Mini Projects</h3><p>Multiple mini projects based on programming, databases, and problem-solving.</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Python–SQL Connector</span>
+    <span>C Programming</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:arthkumardas@example.com" style="color:#38bdf8; text-decoration:none;">arthkumardas@example.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/arthkumardas" target="_blank" style="color:#38bdf8; text-decoration:none;">linkedin.com/in/arthkumardas</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Arth Kumar Das | Portfolio</p>
+</footer>
+
+</body>
+</html>
